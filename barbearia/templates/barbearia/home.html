@@ -1,0 +1,292 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cortes House | Barbearia</title>
+
+    <link rel="stylesheet" href="{% static 'barbearia/css/home.css' %}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="/" class="logo">
+                CORTES<span>HOUSE</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="/" class="active">Início</a>
+
+                <!-- Páginas que serão criadas posteriormente -->
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+            </div>
+
+            <a href="#agendamento" class="nav-button">
+                Agendar horário
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    BARBEARIA • ESTILO • PRESENÇA
+                </p>
+
+                <h1>
+                    Seu estilo.
+                    <br>
+                    <span>Sua identidade.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Cortes precisos, barba impecável e uma experiência
+                    feita para você.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#agendamento" class="button primary">
+                        Agendar horário
+                    </a>
+
+                    <a href="#servicos" class="button secondary">
+                        Conhecer serviços
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEM PRINCIPAL -->
+            <div class="hero-image">
+
+                <!--
+                    Quando você tiver uma foto, podemos colocar aqui:
+
+                    <img
+                        src="{% static 'barbearia/images/barber.jpg' %}"
+                        alt="Barbeiro realizando um corte"
+                    >
+                -->
+
+                <div class="image-placeholder">
+
+                    <span>COLOQUE SUA FOTO AQUI</span>
+
+                </div>
+
+                <div class="image-overlay"></div>
+
+                <div class="hero-badge">
+
+                    <span>01</span>
+
+                    <p>
+                        Seu próximo<br>
+                        corte começa aqui.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about" id="sobre">
+
+            <div class="about-label">
+
+                <span>02</span>
+
+                <p>Sobre nós</p>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h2>
+                    Mais que um corte.
+                    <br>
+                    <span>Uma experiência.</span>
+                </h2>
+
+                <p>
+                    Na Cortes House, acreditamos que um bom corte vai
+                    além do visual. É sobre confiança, personalidade
+                    e a forma como você se apresenta ao mundo.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="services" id="servicos">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        O QUE FAZEMOS
+                    </p>
+
+                    <h2>
+                        Seu visual,
+                        <br>
+                        <span>do seu jeito.</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <h3>Corte</h3>
+
+                        <p>
+                            Cortes modernos e clássicos feitos
+                            de acordo com seu estilo.
+                        </p>
+
+                    </div>
+
+                    <span class="service-arrow">
+                        →
+                    </span>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <h3>Barba</h3>
+
+                        <p>
+                            Acabamento preciso para deixar sua
+                            barba sempre impecável.
+                        </p>
+
+                    </div>
+
+                    <span class="service-arrow">
+                        →
+                    </span>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <h3>Combo</h3>
+
+                        <p>
+                            Corte e barba em uma experiência
+                            completa.
+                        </p>
+
+                    </div>
+
+                    <span class="service-arrow">
+                        →
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta" id="agendamento">
+
+            <p class="eyebrow">
+                PRONTO PARA MUDAR?
+            </p>
+
+            <h2>
+                Seu próximo corte
+                <br>
+                <span>está esperando.</span>
+            </h2>
+
+            <!-- Futuramente esse botão levará para /agendamento/ -->
+            <a href="#agendamento" class="button primary">
+                Agendar meu horário
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            CORTES<span>HOUSE</span>
+        </div>
+
+        <p>
+            © 2026 Cortes House. Todos os direitos reservados.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
