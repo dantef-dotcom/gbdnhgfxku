@@ -26,14 +26,14 @@
             <div class="nav-links">
                 <a href="/" class="active">Início</a>
 
-                <!-- Páginas que serão criadas posteriormente -->
+                <!-- Páginas dinâmicas/âncoras -->
                 <a href="#sobre">Sobre</a>
                 <a href="#servicos">Serviços</a>
             </div>
 
-            <a href="#agendamento" class="nav-button">
-                Agendar horário
-            </a>
+            <li>
+                <a href="#agendamento">Agendamento</a>
+            </li>
 
         </nav>
 
@@ -64,6 +64,7 @@
 
                 <div class="hero-buttons">
 
+                    <!-- CORRIGIDO: Redirecionando para a seção de agendamento até a criação da nova rota -->
                     <a href="#agendamento" class="button primary">
                         Agendar horário
                     </a>
@@ -79,15 +80,6 @@
 
             <!-- IMAGEM PRINCIPAL -->
             <div class="hero-image">
-
-                <!--
-                    Quando você tiver uma foto, podemos colocar aqui:
-
-                    <img
-                        src="{% static 'barbearia/images/barber.jpg' %}"
-                        alt="Barbeiro realizando um corte"
-                    >
-                -->
 
                 <div class="image-placeholder">
 
@@ -257,7 +249,6 @@
                 <span>está esperando.</span>
             </h2>
 
-            <!-- Futuramente esse botão levará para /agendamento/ -->
             <a href="#agendamento" class="button primary">
                 Agendar meu horário
             </a>
